@@ -2,8 +2,8 @@
 <title>Sword Dot Com</title>
 </head>
 <body>
-  <h1>Good choice!</h1>
-  <p>What do you like most about it?</p>
+  <h1 id="error">Good choice!</h1>
+  <p id="error">What do you like most about it?</p>
   <form>
   <input type="radio" onclick="death()" id="sharp" name="gender" value="sharp">
   <label for="sharp" id="ChangeMeh">It's sharp</label><br>
@@ -12,7 +12,7 @@
   <input type="radio" id="deadly" name="gender" value="deadly">
   <label for="deadly">It can kill someone</label>
   </form>
-  <button type="button" onclick="mubsit">Submit</button>
+  <button type="button" id="error" onclick="mubsit">Submit</button>
   <script>
     function death()
     {
@@ -24,19 +24,9 @@
     }
     function mubsit()
     {
-        var ulocation = "https://speedstriker243.github.io/SwordDotCom/001.html"
-        if (document.getElementById("sharp").checked)
-        {
-            window.location.replace(ulocation);
-        }
-        else if (document.getElementById("pointy").checked)
-        {
-            window.location.replace(ulocation);
-        }
-        else if (document.getElementById("deadly").checked)
-        {
-            window.location.replace(ulocation);
-        }
+        document.getElementById("error").innerHTML = "ERROR";
+        document.getElementsByTagName("body").style.backgroundColor = "#000000";
+        document.getElementsByTagName("body").style.color = "#ff0000";
     }
   </script>
 </body>
