@@ -2,8 +2,8 @@
 <title>Sword Dot Com</title>
 </head>
 <body>
-  <h1 id="error">Good choice!</h1>
-  <p id="error">What do you like most about it?</p>
+  <h1 id="errort">Good choice!</h1>
+  <p id="errorp">What do you like most about it?</p>
   <form>
   <input type="radio" onclick="death()" id="sharp" name="gender" value="sharp">
   <label for="sharp" id="ChangeMeh">It's sharp</label><br>
@@ -24,7 +24,8 @@
     }
     function mubsit()
     {
-        document.getElementById("error").innerHTML = "ERROR";
+        document.getElementById("errort").innerHTML = "ERROR";
+        document.getElementById("errorp").innerHTML = "This HTML document has encountered an error";
         document.getElementsByTagName("body").style.backgroundColor = "#000000";
         document.getElementsByTagName("body").style.color = "#ff0000";
     }
