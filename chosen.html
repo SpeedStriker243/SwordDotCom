@@ -5,21 +5,17 @@
   <h1>Good choice!</h1>
   <p>What do you like most about it?</p>
   <form>
-  <input type="radio" onclick="death1()" id="sharp" name="gender" value="sharp">
-  <label for="sharp" id="shar">It's sharp</label><br>
-  <input type="radio" onclick="death2()" id="pointy" name="gender" value="pointy">
-  <label for="pointy" id="point">It's pointy</label><br>
+  <input type="radio" onclick="death()" id="sharp" name="gender" value="sharp">
+  <label for="sharp" id="ChangeMeh">It's sharp</label><br>
+  <input type="radio" onclick="death()" id="pointy" name="gender" value="pointy">
+  <label for="pointy" id="ChangeMeh">It's pointy</label><br>
   <input type="radio" id="deadly" name="gender" value="deadly">
   <label for="deadly">It can kill someone</label>
   </form>
   <script>
-    function death1()
+    function death()
     {
-        document.getElementById("shar").textContent = "It can kill someone";
+        document.getElementById("ChangeMeh").textContent = "It can kill someone";
     }
-    function death2()
-    {
-        document.getElementById("point").textContent = "It can kill someone";
-    [
   </script>
 </body>
