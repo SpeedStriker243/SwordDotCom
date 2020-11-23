@@ -6,20 +6,20 @@
   <p>What do you like most about it?</p>
   <form>
   <input type="radio" onclick="death1()" id="sharp" name="gender" value="sharp">
-  <label for="sharp">It's sharp</label><br>
+  <label for="sharp" id="shar">It's sharp</label><br>
   <input type="radio" onclick="death2()" id="pointy" name="gender" value="pointy">
-  <label for="pointy">It's pointy</label><br>
+  <label for="pointy" id="point">It's pointy</label><br>
   <input type="radio" id="deadly" name="gender" value="deadly">
   <label for="deadly">It can kill someone</label>
   </form>
   <script>
     function death1()
     {
-        document.getElementById("sharpl").innerHTML = "It can kill someone";
+        document.getElementById("shar").textContent = "It can kill someone";
     }
     function death2()
     {
-        document.getElementById("pointyl").innerHTML = "It can kill someone";
+        document.getElementById("point").textContent = "It can kill someone";
     [
   </script>
 </body>
