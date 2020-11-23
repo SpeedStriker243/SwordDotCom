@@ -8,7 +8,7 @@
   <input type="radio" onclick="death()" id="sharp" name="gender" value="sharp">
   <label for="sharp" id="ChangeMeh">It's sharp</label><br>
   <input type="radio" onclick="death()" id="pointy" name="gender" value="pointy">
-  <label for="pointy" id="ChangeMeh">It's pointy</label><br>
+  <label for="pointy" id="ChangeMeh2">It's pointy</label><br>
   <input type="radio" id="deadly" name="gender" value="deadly">
   <label for="deadly">It can kill someone</label>
   </form>
@@ -16,6 +16,7 @@
     function death()
     {
         document.getElementById("ChangeMeh").textContent = "It can kill someone";
+        document.getElementById("ChangeMeh2").textContent = "It can kill someone";
     }
   </script>
 </body>
