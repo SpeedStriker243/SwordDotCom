@@ -1,2 +1,2 @@
-# Welcome to Sword
-Please choose a sword
+# Sword
+Maintenance of the Sword "puzzle" website
