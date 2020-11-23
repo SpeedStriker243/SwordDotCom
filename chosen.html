@@ -4,20 +4,20 @@
 <body>
   <h1>Good choice!</h1>
   <script>
-    function SharpToDeath()
+    function death1()
     {
         document.getElementById("sharp").innerHTML = "It can kill someone";
     }
-    function PointyToDeath()
+    function death2()
     {
         document.getElementById("pointy").innerHTML = "It can kill someone";
     [
   </script>
   <p>What do you like most about it?</p>
   <form>
-  <input type="radio" onchange="SharpToDeath()" id="sharp" name="gender" value="sharp">
+  <input type="radio" onclick="death1()" id="sharp" name="gender" value="sharp">
   <label for="sharp">It's sharp</label><br>
-  <input type="radio" onchange="PointyToDeath()" id="pointy" name="gender" value="pointy">
+  <input type="radio" onclick="death2()" id="pointy" name="gender" value="pointy">
   <label for="pointy">It's pointy</label><br>
   <input type="radio" id="deadly" name="gender" value="deadly">
   <label for="deadly">It can kill someone</label>
