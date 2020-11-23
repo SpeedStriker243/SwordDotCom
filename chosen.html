@@ -24,9 +24,18 @@
     }
     function mubsit()
     {
-        if (document.getElementById("sharp").checked || document.getElementById("pointy").checked || document.getElementById("deadly").checked)
+        var ulocation = "https://speedstriker243.github.io/SwordDotCom/001.html"
+        if (document.getElementById("sharp").checked)
         {
-            window.location.replace("https://speedstriker243.github.io/SwordDotCom/001.html");
+            window.location.replace(ulocation);
+        }
+        else if (document.getElementById("pointy").checked)
+        {
+            window.location.replace(ulocation);
+        }
+        else if (document.getElementById("deadly").checked)
+        {
+            window.location.replace(ulocation);
         }
     }
   </script>
